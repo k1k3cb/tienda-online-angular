@@ -1,0 +1,17 @@
+.header__menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu__items {
+  cursor: pointer;
+  height: 100%;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu__items:hover {
+  background-color: palevioletred;
+}

@@ -1,11 +1,14 @@
-<p>calzado works!</p>
-  
 
-  <div *ngFor="let article of calzadoProducts">
-    
+<!-- <app-ropa [products]="products"></app-ropa> -->
+
+<div *ngFor="let article of products">    
       <h2>{{ article.title }}</h2>
       <img [src]="article.image" alt="{{ article.title }}" />
       <p>{{ article.description }}</p>
       <p>Precio: {{ article.price }}</p>
-   
+    
   </div>
+
+
+
+

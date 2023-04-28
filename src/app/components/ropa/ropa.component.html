@@ -1,1 +1,17 @@
-<p>ropa works!</p>
+<div class="row">
+
+
+   
+        <!-- <img [src]="article.image" alt="{{ article.title }}" />          -->
+        <div *ngFor="let article of ropaProducts" class="card me-3" style="width: 18rem;">
+            <img src="article.image" class="card-img-top" alt="{{ article.title }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ article.title }}</h5>
+                <p class="card-text">{{ article.description }}.</p>
+                <p class="card-text">{{ article.price }}€</p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+        </div>
+
+    
+</div>

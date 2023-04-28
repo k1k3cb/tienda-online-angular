@@ -12,12 +12,14 @@ import { CalzadoComponent } from './components/calzado/calzado.component';
 import { AccesoriosComponent } from './components/accesorios/accesorios.component';
 import {  RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
+import { ArticleListComponent } from './components/article-list/article-list.component';
 
 const APP_ROUTES: Routes = [
   { path: '', component: HomeComponent },
   { path: 'ropa', component: RopaComponent },
   { path: 'calzado', component: CalzadoComponent },
   { path: 'accesorios', component: AccesoriosComponent },
+  { path: 'list', component: ArticleListComponent },
 ];
 
 @NgModule({
@@ -28,6 +30,7 @@ const APP_ROUTES: Routes = [
     CalzadoComponent,
     AccesoriosComponent,
     HomeComponent,
+    ArticleListComponent,
   ],
   imports: [
     BrowserModule,
